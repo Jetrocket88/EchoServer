@@ -1,0 +1,10 @@
+^C:\USERS\HARRY\C++\CPPSERVER\OUT\DEBUG\CMAKEFILES\0935D3BA87FA8A51AB942B73D437E7C9\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/harry/C++/cppServer -BC:/Users/harry/C++/cppServer/out/Debug --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/harry/C++/cppServer/out/Debug/server.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
